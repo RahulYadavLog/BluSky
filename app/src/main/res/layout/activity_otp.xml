@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f5f7"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Verify Number" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Verify your number!"
+                android:textColor="#3b3b43"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/messagePhn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/rubik_regular"
+                android:text="We have sent you SMS with a code to your number +01-202-555-0142"
+                android:textColor="#3b3b43"
+                android:textSize="17sp" />
+
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinview"
+                app:pinBackground="@drawable/pin_drawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:pinWidth="40dp"
+                app:pinHeight="40dp"
+                app:pinLength="6"
+                app:cursorVisible="true"
+                app:forceKeyboard="false"
+                app:hint="0"
+                app:inputType="number"
+                app:password="false"/>
+
+
+
+
+
+
+            <com.marozzi.roundbutton.RoundButton
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="Next"
+                android:fontFamily="@font/rubik_bold"
+                app:rb_animation_alpha="false"
+                app:rb_animation_progress_color="@color/white"
+                app:rb_animation_progress_padding="8dp"
+                app:rb_animation_progress_width="2dp"
+                app:rb_animation_progress_style="circle"
+                app:rb_animation_corner_radius="25dp"
+                app:rb_animation_duration="500"
+                app:rb_background_color="#6bc51d"
+                app:rb_background_color_pressed="@color/white"
+                app:rb_corner_color="@color/white"
+                app:rb_corner_color_pressed="@color/white"
+                app:rb_corner_radius="2dp"
+                app:rb_corner_width="1dp"
+                app:rb_text_color="@color/white"
+                app:rb_text_color_pressed="@android:color/white"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="Didn’t receive the code?"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:textColor="#6bc51d"
+                android:text="Resend a new code."
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

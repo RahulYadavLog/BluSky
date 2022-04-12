@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:checked="true"
+        android:iconTint="#6bc51d"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        android:iconTint="@color/logger"/>
+
+
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_wallet"
+        android:title="Wallet"
+        android:iconTint="#03A9F4"/>
+
+    <item
+        android:id="@+id/history"
+        android:visible="false"
+        android:icon="@drawable/ic_history"
+        android:title="Trip History"
+        android:iconTint="@color/home"/>
+</menu>

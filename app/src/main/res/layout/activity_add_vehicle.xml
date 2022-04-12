@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9F9"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Add Vehicle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"
+        >
+
+
+
+    <EditText
+        android:id="@+id/registration_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_rounded_corner"
+        android:hint="Registration no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHighlight="#697281"
+        android:textColorHint="#697281" />
+
+
+
+        <EditText
+            android:id="@+id/vehicle_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rounded_corner"
+            android:hint="Vehicle Type"
+            android:inputType="text"
+            android:focusable="false"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="#697281"
+            android:textColorHint="#697281" />
+
+
+
+        <EditText
+            android:id="@+id/make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rounded_corner"
+            android:hint="Make"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="#697281"
+            android:textColorHint="#697281" />
+
+
+        <EditText
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_rounded_corner"
+            android:hint="Color"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHighlight="#697281"
+            android:textColorHint="#697281" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_image"
+                />
+
+
+            <Button
+                android:id="@+id/selectImage"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:minWidth="120dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="25dp"
+                android:background="@color/colorPrimary"
+                android:text="Select image"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+
+        <com.marozzi.roundbutton.RoundButton
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Submit"
+            android:fontFamily="@font/rubik_bold"
+            app:rb_animation_alpha="false"
+            app:rb_animation_progress_color="@color/white"
+            app:rb_animation_progress_padding="8dp"
+            app:rb_animation_progress_width="2dp"
+            app:rb_animation_progress_style="circle"
+            app:rb_animation_corner_radius="25dp"
+            app:rb_animation_duration="500"
+            app:rb_background_color="#6bc51d"
+            app:rb_background_color_pressed="@color/white"
+            app:rb_corner_color="@color/white"
+            app:rb_corner_color_pressed="@color/white"
+            app:rb_corner_radius="2dp"
+            app:rb_corner_width="1dp"
+            app:rb_text_color="@color/white"
+            app:rb_text_color_pressed="@android:color/white"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/forgetPassword"
+            app:layout_constraintStart_toStartOf="@+id/forgetPassword"
+            app:layout_constraintEnd_toEndOf="@+id/forgetPassword"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

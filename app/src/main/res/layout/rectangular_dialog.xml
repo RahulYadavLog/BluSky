@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rounded_corner_light_blue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Madan Mahal Jabalpur"
+            android:textColor="@color/black"
+            android:textColorHighlight="#697281"
+            android:textColorHint="#697281" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rounded_corner_light_blue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Civic Centre Jabalpur"
+            android:textColor="@color/black"
+            android:textColorHighlight="#697281"
+            android:textColorHint="#697281" />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/stat_1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="1.5 km"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@+id/divider_1"
+            app:layout_constraintTop_toTopOf="@+id/stat_2" />
+
+        <TextView
+            android:id="@+id/stat_detail_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Distance"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/stat_1"
+            app:layout_constraintStart_toStartOf="@+id/stat_1"
+            app:layout_constraintTop_toBottomOf="@+id/stat_1" />
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:background="#ccc"
+            app:layout_constraintBottom_toBottomOf="@+id/stat_detail_2"
+            app:layout_constraintEnd_toStartOf="@+id/stat_2"
+            app:layout_constraintTop_toTopOf="@+id/stat_2" />
+
+        <TextView
+            android:id="@+id/stat_2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="4 min"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stat_detail_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:maxLines="1"
+            android:text="Duration"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/stat_2"
+            app:layout_constraintStart_toStartOf="@+id/stat_2"
+            app:layout_constraintTop_toBottomOf="@+id/stat_2" />
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:background="#ccc"
+            app:layout_constraintBottom_toBottomOf="@+id/stat_detail_2"
+            app:layout_constraintStart_toEndOf="@+id/stat_2"
+            app:layout_constraintTop_toTopOf="@+id/stat_2" />
+
+        <TextView
+            android:id="@+id/stat_3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="$5/hour"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/divider_2"
+            app:layout_constraintTop_toTopOf="@+id/stat_2" />
+
+        <TextView
+            android:id="@+id/stat_detail_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:maxLines="1"
+            android:text="Price"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/stat_3"
+            app:layout_constraintStart_toStartOf="@+id/stat_3"
+            app:layout_constraintTop_toBottomOf="@+id/stat_3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/orange_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_toStartOf="@+id/map_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:text="See where to traveled"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Check Now"
+                android:textColor="#FFC300"
+                android:textSize="21sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_bold"
+                android:text="Available slots: 21"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/map_card"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/lite_listrow_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                map:liteMode="true"
+                map:mapType="none" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="40dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_rounded_corner_light_blue"
+            android:src="@drawable/ic_arrow" />
+
+        <Button
+            android:id="@+id/bookNow"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textColor="@color/white"
+            android:fontFamily="@font/rubik_bold"
+            android:background="@drawable/shape_rounded_corner_black"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
